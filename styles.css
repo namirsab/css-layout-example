@@ -1,0 +1,87 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+.body-grid {
+  display: grid;
+  grid-template-rows: [header] 100px [content] auto [footer] 100px;
+  grid-template-columns: [left-gutter] 80px [content] auto [right-gutter] 80px;
+  row-gap: 8px;
+}
+
+.header {
+  grid-row: header;
+  grid-column: content;
+  background-color: #ed6a5a;
+  color: whitesmoke;
+}
+
+.header-title-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  grid-row: content;
+  grid-column: content;
+  background-color: #f4f1bb;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Interest Box */
+.interest-box {
+  color: whitesmoke;
+  padding: 8px;
+}
+
+.movies {
+  background-color: teal;
+}
+
+.series {
+  background-color: #9bc1bc;
+}
+
+.books {
+  background-color: #5ca4a9;
+}
+
+.video-games {
+  background-color: darkolivegreen;
+}
+
+.interest-box-items {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.interest-box-items > li {
+  list-style-type: none;
+  border-radius: 5px;
+  background-color: #ed6a5a;
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.63);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.info-footer {
+  grid-row: footer;
+  grid-column: content;
+  display: flex;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed6a5a;
+}
