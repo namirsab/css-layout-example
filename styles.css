@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 .body-grid {
   display: grid;
   grid-template-rows: [header] 100px [content] auto [footer] 100px;
@@ -35,13 +39,14 @@
   background-color: #f4f1bb;
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 /* Interest Box */
 .interest-box {
   color: whitesmoke;
   padding: 8px;
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.63);
 }
 
 .movies {
@@ -71,7 +76,6 @@
   list-style-type: none;
   border-radius: 5px;
   background-color: #ed6a5a;
-  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.63);
   padding: 8px;
   margin-bottom: 8px;
 }
