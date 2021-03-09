@@ -1,3 +1,4 @@
-@import "./src/styles/base.css";
+@import "./src/styles/_base.css";
 @import "./src/styles/colors.css";
+@import "./src/styles/utility.css";
 @import "./src/styles/page.css";
