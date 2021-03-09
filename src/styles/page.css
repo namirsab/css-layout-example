@@ -1,22 +1,13 @@
-/* Global Styles */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
 .body-grid {
   display: grid;
   grid-template-rows: [header] 100px [content] auto [footer] 100px;
   row-gap: 8px;
+  background-color: var(--background-color);
 }
 
 .header {
   grid-row: header;
-  /* grid-column: content; */
-  background-color: #ed6a5a;
+  background-color: var(--primary-color);
   color: whitesmoke;
 }
 
@@ -34,7 +25,7 @@ html {
 
 .content {
   grid-row: content;
-  background-color: #f4f1bb;
+  background-color: var(--content-background-color);
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -44,7 +35,7 @@ html {
 .interest-box {
   color: whitesmoke;
   padding: 8px;
-  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.63);
+  box-shadow: 0 9px 15px -1px rgba(0, 0, 0, 0.63);
 }
 
 .movies {
@@ -73,7 +64,7 @@ html {
 .interest-box-items > li {
   list-style-type: none;
   border-radius: 5px;
-  background-color: #ed6a5a;
+  background-color: var(--primary-color);
   padding: 8px;
   margin-bottom: 8px;
 }
@@ -84,7 +75,7 @@ html {
   color: whitesmoke;
   justify-content: center;
   align-items: center;
-  background-color: #ed6a5a;
+  background-color: var(--primary-color);
 }
 
 @media screen and (min-width: 800px) {

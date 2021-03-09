@@ -1,0 +1,7 @@
+/* To define CSS Variables */
+:root {
+  --background-color: white;
+  --primary-color: #ba1200ff;
+  --heading-color: whitesmoke;
+  --content-background-color: #c8e0f4ff;
+}
