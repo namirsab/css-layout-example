@@ -34,24 +34,9 @@
 /* Interest Box */
 .interest-box {
   color: whitesmoke;
+  background-color: darkolivegreen;
   padding: 8px;
   box-shadow: 0 9px 15px -1px rgba(0, 0, 0, 0.63);
-}
-
-.movies {
-  background-color: teal;
-}
-
-.series {
-  background-color: #9bc1bc;
-}
-
-.books {
-  background-color: #5ca4a9;
-}
-
-.video-games {
-  background-color: darkolivegreen;
 }
 
 .interest-box-items {
