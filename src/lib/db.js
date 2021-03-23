@@ -1,23 +1,26 @@
-export const data = [
-  {
-    id: 0,
-    title: "Video Games",
-    items: [
-      "Final Fantasy",
-      "Metal Gear Solid",
-      "Counter Strike: Global Offensive",
-      "Fifa",
-      "Battlefield",
-    ],
-  },
-  {
-    id: 1,
-    title: "Movies",
-    items: ["The Hateful 8", "Reservoir Dugs", "Matrix", "Slumdog Millionaire"],
-  },
-  {
-    id: 2,
-    title: "Books",
-    items: ["Sapiens", "Homo Deus", "A Handmaid's Telltale"],
-  },
-];
+export function pushSection(sectionObject) {
+  // Get the sections from the localStorage and convert them to JavaScript array
+  let sections;
+  const storageSections = JSON.parse(localStorage.getItem("sections"));
+  if (storageSections === null) {
+    sections = [];
+  } else {
+    sections = storageSections;
+  }
+
+  // Add the new section to the array
+  sections.push(sectionObject);
+  // Store the array again inside the local storage
+  localStorage.setItem("sections", JSON.stringify(sections));
+}
+
+export function getSections() {
+  let sections;
+  const storageSections = JSON.parse(localStorage.getItem("sections"));
+  if (storageSections === null) {
+    sections = [];
+  } else {
+    sections = storageSections;
+  }
+  return sections;
+}

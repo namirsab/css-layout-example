@@ -16,8 +16,7 @@ export function createCard(card) {
   const cardSection = document.createElement("section");
   cardSection.classList.add("interest-box");
 
-  const h2Title = document.createElement("h2");
-  h2Title.textContent = card.title;
+  const h2Title = createHeading(card.title);
 
   cardSection.append(h2Title);
 
@@ -43,6 +42,13 @@ export function createCard(card) {
   cardSection.append(likeButton);
 
   return cardSection;
+}
+
+function createHeading(title) {
+  const h2Title = document.createElement("h2");
+  h2Title.textContent = title;
+
+  return h2Title;
 }
 
 /*

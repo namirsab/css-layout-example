@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Create Section</title>
+  </head>
+  <body class="body-grid">
+    <header class="header">
+      <div class="header-title-container">
+        <h1 class="header-title">Create Section</h1>
+        <a href="index.html" class="create-section">&lt; Back</a>
+      </div>
+    </header>
+    <main class="content">
+      <form class="create-form">
+        <fieldset>
+          <legend>Title</legend>
+
+          <input type="text" name="title" id="title" />
+        </fieldset>
+        <fieldset>
+          <legend>Items</legend>
+          <textarea
+            placeholder="Separated by commas"
+            name="items"
+            id="items"
+          ></textarea>
+        </fieldset>
+        <button type="submit">Create Section!</button>
+      </form>
+    </main>
+    <footer class="info-footer">Made with 💖 by Namir</footer>
+    <script src="create.js" type="module"></script>
+  </body>
+</html>
