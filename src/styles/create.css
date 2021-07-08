@@ -1,0 +1,26 @@
+.create-form {
+  grid-column: 1 / -1;
+  align-self: center;
+}
+
+.create-form > fieldset {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.create-form > button {
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 1px solid whitesmoke;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1.3em;
+  margin-bottom: 1em;
+}
+
+.create-form > button:hover {
+  background: var(--primary-color);
+  color: whitesmoke;
+}
